@@ -1,0 +1,131 @@
+1.  Check the current state of the directory structure:                         
+    ls
+
+2.  Create directory ”redi” in home directory:                    
+    (a) cd E:
+    (b) mkdir ReDi
+
+3.  Create three subdirectories inside “redi”: d1, d2, d3:                      
+    mkdir d1,  mkdir d2,  mkdir d3
+
+4.  In each of them, create files doc1.txt, doc2.txt and doc3.txt respectively:
+    touch d1/doc1.txt, touch d2/doc2.txt, touch d3/doc3.txt
+
+5.  Copy file doc1.txt from d1 to d2.:
+    cp d1/doc1.txt d2
+
+6.  Move file doc1.txt from d2 to d3.:                                          
+    mv d2/doc1.txt d3
+
+7.  Delete folder d3 and then file doc2.txt in d2.: 
+    (a) rm -r d3 
+    (b) cd d2
+    (c) rm -r doc2.txt
+
+8.  Check the current state of “redi” folder.
+    cd -
+    ls -R
+
+9.  Show the current working directory.
+    pwd
+
+10. Move file doc1.txt from d1 to d2.
+    mv d1/doc1.txt d2
+
+11. (a) Create some content in doc1.txt in d2.
+    echo 'This file will be read in terminal'>d2/doc1.txt
+    (b) and show it in command line.
+    cat d2/doc1.txt
+
+12. Create directory d4 and doc4.txt inside it in “redi” folder.
+    (a) mkdir d4
+    (b) touch d4/doc4.txt
+
+13. Search for all files ending with “*.txt”.
+    ls *.txt
+
+14. Delete the whole “redi” folder.
+    rm -R ReDi
+
+
+
+Git: Training - tasks
+
+1. Create repository on GitHub.
+
+2. Clone it to your computer.
+   
+   git clone https://github.com/ottersberger/ReDi-DS-Homeworks.git
+
+3. Check git status.
+   
+   git status
+   
+4.Create a file with some content named “lesson5.txt”.
+   
+  (a) touch lesson5.txt
+  (b) echo 'This is a txt file created for ReDi lessons'>lesson5.txt
+
+5. Stage the added file. (check git status first)
+
+   git add lesson5.txt
+
+6 Commit the file.
+
+  git commit -m "added lesson5.txt"
+
+7 $ git remote show origin
+ 
+  git remote -v
+
+
+Git: Training - tasks (2)
+
+1. Go to GitHub and check the file has been pushed.
+   
+   Done
+
+2. Create a new file directly from GitHub. 
+   
+   Done                       
+
+3. Pull the changes to your computer.
+
+   git pull
+
+
+Git: training - tasks
+
+1. Check with git status which branch are you in.
+   
+   git status
+   git checkout
+
+2. Create a new branch “test”.
+  
+   git checkout -b test
+
+3. Checkout to new branch. (check with git status first)
+
+   (a) git status
+   (b) git checkout test
+
+4. Create a new file “lesson5_branch.txt”.
+    
+   touch lesson5_branch.txt e:Redi-Ds-Homeworks
+
+
+5. Commit file.
+   git add lesson5_branch.txt
+   git commit -m  'This is a test branch file'
+
+6. Push to the branch.
+  
+   git push
+
+7. Merge the branch.
+
+   git checkout ReDi-Exercises # Branch merged into
+   
+   git merge test # Branch merged from
+
